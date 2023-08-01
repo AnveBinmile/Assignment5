@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #642C99;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background {
+    background: url('photos/bglar.png'), 50% / cover no-repeat;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    /* margin: auto; */
+    /* object-fit: cover;
+    background-repet: no-repeat; */
+    width: 100%;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+
+.nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    height: 55px;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.nav .menubtn {
+
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.nav .menu {
+    display: flex;
+    width: 50%;
+    max-width: 90%;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap;
+    list-style: none;
+    color: #642C99;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+
+.nav .icon {
+    width: 20%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.page {
+    width: 90%;
+    margin: auto;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.subpage {
+    width: 80%;
+    margin: auto;
+}
+
+
+.line {
+    width: 100%;
+    margin: auto;
+}
+
+
+.page h1 {
+    color: #642C99;
+    text-align: left;
+    font-family: Wendy One;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.page h2 {
+    width: 100%;
+    color: #642C99;
+    font-family: Wendy One;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.page p {
+    /* width: 95%; */
+    color: #642C99;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 56%;
+}
+
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10%;
+    /* border: 2px solid black; */
+}
+
+
+h5 {
+    color: #642C99;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+
+h3 {
+    color: #642C99;
+    text-align: center;
+    font-family: Wendy One;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    text-align: left;
+}
+
+h4 {
+    color: #642C99;
+    text-align: center;
+    font-family: Wendy One;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #642C99;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.top .one {
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.top .two {
+    width: 30%
+}
+
+.top img {
+    /* border: 3px solid red; */
+    width: 100%;
+
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.container .first {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.container .second {
+    /* width: 70%; */
+}
+
+
+.pkgs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.pkgs ul li {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    /* gap: ; */
+}
+
+li .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.total {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 100px;
+    align-items: center;
+    /* padding: 0 20px; */
+}
+
+.inps {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 2fr);
+    margin: 100px 0;
+    /* border: 2px solid green; */
+    grid-gap: 10%;
+    grid-column-gap: 10%;
+    grid-row-gap: 70px;
+
+    height: auto;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+    width: 80%;
+    gap: 15px;
+}
+
+.inp input {
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    border: 2px solid #642C99;
+    background-color: rgb(255, 234, 202);
+}
+
+.inp label {
+    color: #642C99;
+    text-align: center;
+    font-family: Wendy One;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #642C99;
+    margin: auto;
+}
+
+.title_small{
+    opacity: 0;
+    position: absolute;
+}
+
+.footer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #642C99;
+    /* border: 2px solid blue; */
+    padding: 30px 0;
+    /* flex-direction: column; */
+    /* gap: 20%; */
+    /* border: 2px solid red; */
+}
+
+
+.footer .two {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 50px;
+    width: 100%;
+}
+
+.footer .two .up {
+    /* border: 2px solid green; */
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    gap: 20%;
+}
+
+.footer .two .down {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .two .down ul {
+    width: 100%;
+}
+
+.footer .down li {
+    width: 25%;
+    /* width: 25%; */
+}
+
+.footer .title {
+    position: relative;
+    bottom: 230px;
+}
+
+.footer .two .up .list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 40px;
+}
+
+.footer .two .down ul {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+    list-style: none;
+    gap: 20px;
+}
+
+.footer .list {
+    width: 30%;
+}
+
+.footer h4 {
+    color: #fdefd1;
+    font-family: Wendy One;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer .inp {
+    display: flex;
+    gap: 20px;
+}
+
+.footer ul li,
+.footer .input {
+    color: #fdefd1;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    width: 100%;
+    /* 166.667% */
+}
+
+.footer button {
+    border-radius: 8px;
+    background: #fdefd1;
+    color: #642c99;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.footer input {
+    width: 70%;
+    height: 50px;
+    background-color: #642c99;
+    color: #fdefd1;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    border-radius: 8px;
+    border: 2px solid #fdefd1;
+    /* 187.5% */
+}
+
+
+.container button {
+    /* width: 206px; */
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #642C99;
+    color: #FBFAC9;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 30%;
+    margin: 100px 0;
+}
+
+
+
+@media screen and (max-width:1500px) {
+    .background {
+        background: url('photos/bgmed.png'), lightgray 50% / cover no-repeat;
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        /* margin: auto; */
+        /* object-fit: cover;
+        background-repet: no-repeat; */
+        width: 100%;
+        /* background-position: center; */
+        background-size: cover;
+    }
+
+    .nav {
+        width: 95%;
+        margin: auto;
+    }
+
+
+    .inps {
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+    }
+
+    .page h1 {
+        font-size: 100px;
+        width: 100%;
+    }
+
+    .page p {
+        width: 90%;
+    }
+
+    .page .one {
+        margin-bottom: 50px;
+    }
+
+
+    .inp {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container .first {
+        gap: 40px;
+    }
+
+    .top {
+        gap: 10px;
+    }
+
+    .top .one {
+        width: 70%;
+        gap: 30px;
+    }
+
+    .pkgs {
+        padding: 10px 20px
+    }
+
+    .top .two {
+        width: 40%;
+    }
+
+
+
+    .second .line {
+        margin-bottom: 40px;
+    }
+
+    .container button {
+        margin: 30px 0;
+    }
+
+
+
+    .footer {
+        align-items: flex-end;
+        padding: 100px 20px;
+
+        width: 100%;
+        /* padding-bottom: 0; */
+        /* padding: 0; */
+        /* padding-top: 200px; */
+    }
+
+    .footer .title {
+        position: static;
+    }
+
+    .footer .two {
+        flex-direction: row-reverse;
+
+    }
+
+    .footer .two .up {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .footer .down {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .footer .two .down ul {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer .down li {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:700px) {
+
+    .background {
+        background: url('photos/bgsmall.png'), 50% / cover no-repeat;
+        width: 100%;
+        gap: 0;
+        background-size: cover;
+
+        /* gap: 50px; */
+        /* gap: 10px; */
+    }
+
+    h5 {
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    .subpage {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav {
+        height: 50px;
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .nav .menubtn {
+        display: flex;
+        align-items: center;
+        position: static;
+        opacity: 1;
+    }
+
+    .nav .menu {
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    .page h1 {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .top img {
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+
+
+
+    .top .one,
+    .top .two {
+        width: 100%;
+    }
+
+    .top .two {
+        width: 70%;
+        height: 211px;
+        background: url('photos/image\ 83.png'), 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        margin-left: auto;
+
+    }
+
+    h4 {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+    .container {
+        gap: 70px;
+    }
+
+    .total {
+        justify-content: space-between;
+
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .inps {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        align-items: center;
+    }
+
+    .inp label {
+        font-size: 18px;
+    }
+
+
+    .inp input {
+        height: 40px;
+    }
+
+    .container .second {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 40px; */
+    }
+
+    .container .sec {
+        width: 100%;
+        height: auto;
+    }
+
+    .pkgs {
+        padding: 0;
+    }
+
+    .container button {
+        width: 100%;
+
+        margin: 30px 0;
+        margin-right: 0;
+    }
+
+
+
+
+    .footer {
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+
+    .footer .title {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .footer .title_small {
+        position: static;
+        opacity: 1;
+        color: #fbfac9;
+        /* border:2px solid white; */
+    }
+
+    .footer .two {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer .two .up {
+        width: 100%;
+    }
+
+    .footer .two .up .list {
+        gap: 30px;
+    }
+
+
+}
