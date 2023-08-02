@@ -599,7 +599,7 @@ e .pic {
 
 .footer_page{
   width: 100%;
-  background-color: #642c99;
+  /* background-color: #642c99; */
 }
 
 @media screen and (max-width: 1500px) {
@@ -612,6 +612,10 @@ e .pic {
   .subpage {
     width: 90%;
     padding: 50px 0;
+  }
+
+  .nav .menu{
+    width: 80%;
   }
 
   .page h1 {

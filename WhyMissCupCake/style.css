@@ -11,16 +11,11 @@ a {
 
 .background {
     background: url('photos/bg/bglar.png'), lightgray 50% / cover no-repeat;
-    /* width: 100%; */
+    /* background-size: cover; */
     display: flex;
     flex-direction: column;
-    gap: 150px;
-    /* margin: auto; */
-    /* object-fit: cover;
-    background-repet: no-repeat; */
+    gap: 90px;
     width: 100%;
-    /* background-position: center; */
-    background-size: cover;
 }
 
 
@@ -31,7 +26,6 @@ a {
     padding: 30px;
     height: 55px;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
 .nav .menubtn {
@@ -72,21 +66,12 @@ a {
     width: 80%;
     margin: auto;
     /* margin: 50px auto; */
-    /* border: 2px solid black; */
-    /* padding: 30px 0; */
-    /* border: 2px solid red; */
-    margin: 50px auto;
     text-align: center;
 }
 
 .subpage {
     width: 80%;
     margin: auto;
-    /* padding: 30px 0; */
-    /* border: 2px solid black; */
-    /* padding: 50px 0; */
-    /* border: 2px olsid wheat; */
-
 }
 
 
@@ -150,7 +135,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 54px;
+    gap: 50px;
     width: 60%;
     /* border: 2px solid black; */
 }
@@ -166,7 +151,7 @@ a {
     /* /* height: 800px; */
     /* width: 800px; */
 
-    width: 100%;
+    width: 85%;
     /* height: 100%; */
     border-radius: 50%;
     background-color: rgb(255, 234, 202);
@@ -174,13 +159,13 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 54px;
+    gap: 30px;
     position: relative;
 }
 
 .circle img {
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
 }
 
 .page2 .content {
@@ -226,9 +211,6 @@ a {
     position: relative;
 }
 
-/* .page2 .content .bytes {
-    position: absolute;
-} */
 
 .bytes {
     /* width: 500px; */
@@ -253,7 +235,8 @@ a {
 
 .abs1 {
     bottom: 250px;
-    left: -10px;
+    left: 40px;
+    /* border: 2px solid rebeccapurple; */
 }
 
 .abs2 {
@@ -265,16 +248,20 @@ a {
     bottom: 150px;
 }
 
+.cards .bytes{
+    left: 120px;
+}
+
 
 
 .footer {
     width: 80%;
     margin: auto;
     display: flex;
-    background-color: #642C99;
+    /* background-color: #642C99; */
     justify-content: flex-start;
     /* border: 2px solid blue; */
-    padding: 30px 0;
+    padding: 70px 0;
     /* flex-direction: column; */
     /* gap: 20%; */
     /* border: 2px solid red; */
@@ -324,6 +311,7 @@ a {
     display: flex;
     flex-direction: column;
     list-style: none;
+    justify-content: flex-start;
     gap: 40px;
 }
 
@@ -362,6 +350,7 @@ a {
     font-weight: 700;
     line-height: 30px;
     width: 100%;
+    text-align: left;
     /* 166.667% */
 }
 
@@ -396,7 +385,7 @@ a {
 
 .footer_page {
     width: 100%;
-    background-color: #642C99;
+    /* background-color: #642C99; */
 }
 
 @media screen and (max-width:1400px) {
@@ -404,8 +393,11 @@ a {
 
     .background {
         background: url('photos/bg/bg_tab.jpg'), lightgray 50% / cover no-repeat;
+        /* object-fit:scale-down; */
+        /* background-repeat: repeat; */
+        /* object-fit: contain; */
         width: 100%;
-        gap: 70px;
+        gap: 200px;
         /* border: 30px solid red; */
     }
 
@@ -413,6 +405,11 @@ a {
     .nav {
         width: 95%;
         margin: auto;
+        /* height: ; */
+    }
+
+    .nav .menu{
+        width: 70%;
     }
 
     .page {
@@ -436,6 +433,7 @@ a {
     .page .one {
         /* border: 2px solid brown; */
         width: 80%;
+        gap: 70px;
     }
 
     .page1 .img2 {
@@ -488,6 +486,10 @@ a {
         line-height: 20px;
     }
 
+    .cards .bytes{
+        left: 10px;
+    }
+
     .page1 .two {
         width: 70%;
     }
@@ -510,9 +512,9 @@ a {
 
 
     .footer {
-        align-items: flex-end;
-        padding: 100px 20px;
-        width: 100%;
+        /* align-items: flex-end;/ */
+        padding: 50px 0;
+        width: 80%;
         /* padding-bottom: 0; */
         /* padding: 0; */
         /* padding-top: 200px; */
@@ -550,11 +552,14 @@ a {
         text-align: left;
     }
 
+    .footer_page {
+        width: 100%;
+    }
 
+    .footer h4{
+        text-align: left;
+    }
 
-.footer_page {
-    width: 100%;
-}
 
 
 }
@@ -567,8 +572,8 @@ a {
     .background {
         background: url('photos/bg/bgsmall.png'), lightgray 50% / cover no-repeat;
         width: 100%;
-        gap: 30px;
-        gap: 0;
+        gap: 100px;
+        /* gap: 0; */
         /* border: 30px solid red; */
     }
 
@@ -594,6 +599,7 @@ a {
     .nav .menu {
         position: absolute;
         opacity: 0;
+        
     }
 
     .page .one {
@@ -607,6 +613,23 @@ a {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+    }
+
+    .page1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page1 .two{
+        height: 40px;
+    }
+
+    .page1 {
+        gap: 70px;
+    }
+
+    .page .one{
+        gap: 40px;
     }
 
     .page2 {
@@ -642,6 +665,9 @@ a {
         text-align: center;
     }
 
+    .bytes img{
+        width: 30%;
+    }
 
 
 
@@ -693,11 +719,11 @@ a {
     }
 
     .page1 .two .img2 {
-        top: -6em;
+        /* top: -6em; */
     }
 
     .page1 .two .img1 {
-        top: 2em;
+        /* top: 2em; */
         left: -4em;
     }
 }

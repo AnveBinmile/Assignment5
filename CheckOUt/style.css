@@ -15,15 +15,16 @@ a {
 .background {
     background: url('photos/bglar.png'), 50% / cover no-repeat;
     /* width: 100%; */
+
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 50px;
     /* margin: auto; */
     /* object-fit: cover;
     background-repet: no-repeat; */
     width: 100%;
     /* background-position: center; */
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 
@@ -200,7 +201,7 @@ p {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
 }
 
 .container .first {
@@ -208,7 +209,7 @@ p {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 20px;
 }
 
 .container .second {
@@ -295,7 +296,7 @@ li .info {
     width: 100%;
     height: 3px;
     background-color: #642C99;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .title_small{
@@ -304,13 +305,13 @@ li .info {
 }
 
 .footer {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
     /* background-color: #642C99; */
     /* border: 2px solid blue; */
-    padding: 30px 0;
+    padding: 70px 0;
     /* flex-direction: column; */
     /* gap: 20%; */
     /* border: 2px solid red; */
@@ -338,8 +339,10 @@ li .info {
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
-    width: 100%;
+    /* width: 100%; */
+    padding: 50px 0;
     justify-content: space-between;
+
 }
 
 .footer .two .down ul {
@@ -384,6 +387,7 @@ li .info {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: left;
 }
 
 .footer .inp {
@@ -400,6 +404,7 @@ li .info {
     font-weight: 700;
     line-height: 30px;
     width: 100%;
+    text-align: left;
     /* 166.667% */
 }
 
@@ -453,22 +458,22 @@ li .info {
 
 .footer_page {
     width: 100%;
-    background-color: #642C99;
+    /* background-color: #642C99; */
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1400px) {
     .background {
         background: url('photos/bgmed.png'), lightgray 50% / cover no-repeat;
         /* width: 100%; */
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 90px;
         /* margin: auto; */
         /* object-fit: cover;
         background-repet: no-repeat; */
         width: 100%;
         /* background-position: center; */
-        background-size: cover;
+        /* background-size: cover; */
     }
 
     .nav {
@@ -477,9 +482,18 @@ li .info {
     }
 
 
+    .nav .menu{
+        width: 80%;
+    }
+
+
     .inps {
         grid-column-gap: 20px;
-        grid-row-gap: 30px;
+        grid-row-gap: 50px;
+    }
+
+    .page{
+        margin: 30px 0;
     }
 
     .page h1 {
@@ -496,7 +510,8 @@ li .info {
     }
 
 
-    .inp {
+    .footer .inp {
+
         width: 90%;
     }
 
@@ -506,7 +521,7 @@ li .info {
     }
 
     .container .first {
-        gap: 40px;
+        gap: 70px;
     }
 
     .top {
@@ -542,10 +557,15 @@ li .info {
         align-items: flex-end;
         padding: 100px 20px;
 
-        width: 100%;
+        width: 80%;
         /* padding-bottom: 0; */
         /* padding: 0; */
         /* padding-top: 200px; */
+    }
+
+
+    .footer button{
+        width: 70%;
     }
 
     .footer .title {
@@ -561,6 +581,10 @@ li .info {
         flex-direction: column-reverse;
         gap: 20px;
         text-align: left;
+    }
+
+    .footer .two .up .list {
+        gap: 24px;
     }
 
     .footer .down {
@@ -588,8 +612,8 @@ li .info {
     .background {
         background: url('photos/bgsmall.png'), 50% / cover no-repeat;
         width: 100%;
-        gap: 0;
-        background-size: cover;
+        gap: 40px;
+        /* background-size: cover; */
 
         /* gap: 50px; */
         /* gap: 10px; */
@@ -598,8 +622,14 @@ li .info {
     h5 {
         position: absolute;
         opacity: 0;
+        /* font-size: 30px; */
     }
 
+    .page{
+        margin: 30px auto;
+        width: 90%;
+
+    }
 
     .subpage {
         width: 100%;
@@ -651,7 +681,7 @@ li .info {
     }
 
     .top .two {
-        width: 70%;
+        width: 60%;
         height: 211px;
         background: url('photos/image\ 83.png'), 50% / cover no-repeat;
         background-repeat: no-repeat;
@@ -670,7 +700,11 @@ li .info {
 
 
     .container {
-        gap: 70px;
+        gap: 20px;
+    }
+
+    .container .first{
+        gap: 0;
     }
 
     .total {
@@ -687,6 +721,8 @@ li .info {
         flex-direction: column;
         /* justify-content: flex-start; */
         align-items: center;
+        margin: 50px 0;
+        gap: 30px;
     }
 
     .inp label {
