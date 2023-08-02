@@ -359,6 +359,7 @@ a{
     margin: auto;
     display: flex;
     justify-content: flex-start;
+    background-color: #642c99;
     /* border: 2px solid blue; */
     padding: 30px 0;
        /* flex-direction: column; */
