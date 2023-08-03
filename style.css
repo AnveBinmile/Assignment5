@@ -739,7 +739,7 @@ e .pic {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   .background {
     background: url("photos/bgSmall.png"), lightgray 50% / cover no-repeat;
     width: 100%;
