@@ -6,6 +6,7 @@
 
 body {
     background-color: #642C99;
+    /* accent-color: red; */
 }
 
 a {
@@ -23,13 +24,14 @@ a {
     /* object-fit: cover;
     background-repet: no-repeat; */
     width: 100%;
+    align-items: center;
     /* background-position: center; */
     /* background-size: cover; */
 }
 
 
 .nav {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -122,6 +124,11 @@ a {
     width: 56%;
 }
 
+.second{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
 
 .top {
     display: flex;
@@ -209,12 +216,9 @@ p {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
 }
 
-.container .second {
-    /* width: 70%; */
-}
 
 
 .pkgs {
@@ -222,7 +226,7 @@ p {
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    padding: 50px 20px;
+    padding: 0 20px;
 }
 
 .pkgs ul li {
@@ -233,6 +237,45 @@ p {
     margin: 30px 0;
     /* gap: ; */
 }
+
+
+.option {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.option input {
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    /* appearance: none;
+    -webkit-appearance: none; */
+
+    /* For a circular appearance we need a border-radius. */
+    border-radius: 50%;
+
+    /* The background will be the radio dot's color. */
+    background-color: #FF572233;
+
+    /* The border will be the spacing between the dot and the outer circle */
+    border: 3px solid #FFF;
+
+    /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
+    /* box-shadow: 0 0 0 1px blue; */
+    /* -webkit-appearance: none; */
+    /* appearance: none; */
+    /* border: 2px solid blue; */
+}
+
+input:checked {
+   
+    accent-color: #642C99;
+}
+
 
 li .info {
     display: flex;
@@ -262,6 +305,10 @@ li .info {
     grid-row-gap: 70px;
 
     height: auto;
+}
+
+.contact{
+    grid-template-rows: repeat(1,2fr);
 }
 
 .inp {
@@ -299,7 +346,7 @@ li .info {
     margin: 50px auto;
 }
 
-.title_small{
+.title_small {
     opacity: 0;
     position: absolute;
 }
@@ -311,7 +358,7 @@ li .info {
     justify-content: flex-start;
     /* background-color: #642C99; */
     /* border: 2px solid blue; */
-    padding: 70px 0;
+    padding:  0;
     /* flex-direction: column; */
     /* gap: 20%; */
     /* border: 2px solid red; */
@@ -340,7 +387,7 @@ li .info {
     width: 100%;
     display: flex;
     /* width: 100%; */
-    padding: 50px 0;
+    /* padding: 50px 0; */
     justify-content: space-between;
 
 }
@@ -452,7 +499,8 @@ li .info {
     font-weight: 400;
     line-height: normal;
     width: 30%;
-    margin: 100px 0;
+    margin: 50px 0;
+    float: right;
 }
 
 
@@ -482,7 +530,7 @@ li .info {
     }
 
 
-    .nav .menu{
+    .nav .menu {
         width: 80%;
     }
 
@@ -492,7 +540,9 @@ li .info {
         grid-row-gap: 50px;
     }
 
-    .page{
+    
+
+    .page {
         margin: 30px 0;
     }
 
@@ -521,7 +571,7 @@ li .info {
     }
 
     .container .first {
-        gap: 70px;
+        gap: 60px;
     }
 
     .top {
@@ -564,7 +614,7 @@ li .info {
     }
 
 
-    .footer button{
+    .footer button {
         width: 70%;
     }
 
@@ -604,6 +654,10 @@ li .info {
         text-align: left;
     }
 
+    .footer .inp {
+        flex-direction: column;
+    }
+
 
 }
 
@@ -612,7 +666,7 @@ li .info {
     .background {
         background: url('photos/bgsmall.png'), 50% / cover no-repeat;
         width: 100%;
-        gap: 40px;
+        gap: 60px;
         /* background-size: cover; */
 
         /* gap: 50px; */
@@ -625,9 +679,9 @@ li .info {
         /* font-size: 30px; */
     }
 
-    .page{
+    .page {
         margin: 30px auto;
-        width: 90%;
+        width: 80%;
 
     }
 
@@ -700,11 +754,11 @@ li .info {
 
 
     .container {
-        gap: 20px;
+        gap: 0px;
     }
 
-    .container .first{
-        gap: 0;
+    .container .first {
+        gap: 20px;
     }
 
     .total {
@@ -721,8 +775,8 @@ li .info {
         flex-direction: column;
         /* justify-content: flex-start; */
         align-items: center;
-        margin: 50px 0;
-        gap: 30px;
+        margin: 80px 0;
+        gap: 50px;
     }
 
     .inp label {
@@ -732,6 +786,15 @@ li .info {
 
     .inp input {
         height: 40px;
+    }
+
+    .option{
+        gap:20px;
+    }
+
+    .option input{
+        width: 14px;
+        height: 14px;
     }
 
     .container .second {
@@ -757,6 +820,10 @@ li .info {
         margin-right: 0;
     }
 
+    .second{
+        gap: 24px;
+    }
+
 
 
 
@@ -768,6 +835,8 @@ li .info {
         align-items: flex-start;
 
     }
+
+    .footer .icon
 
     .footer .title {
         opacity: 0;
@@ -796,5 +865,18 @@ li .info {
         gap: 30px;
     }
 
+    .title{
+        display: none;
+    }
 
+
+}
+
+@media screen  and (min-width:400px) and (max-width:1000px) {
+    .footer_page{
+        margin-top: 0px;
+        padding-top: 20px;
+        width: 100%;
+        background-color: #642C99;
+    }
 }

@@ -456,7 +456,7 @@ a {
     }
 
     .circle {
-        width: 100%;
+        width: 90%;
         /* height: 350px; */
         /* height: 300px; */
         margin: auto;
@@ -480,7 +480,7 @@ a {
     }
 
     .bytes p {
-        width: 100%;
+        width: 80%;
         font-size: 14px;
         text-align: justify;
         line-height: 20px;
@@ -560,6 +560,9 @@ a {
         text-align: left;
     }
 
+    .footer .inp {
+        flex-direction: column;
+      }
 
 
 }
@@ -572,7 +575,7 @@ a {
     .background {
         background: url('photos/bg/bgsmall.png'), lightgray 50% / cover no-repeat;
         width: 100%;
-        gap: 100px;
+        gap: 95px;
         /* gap: 0; */
         /* border: 30px solid red; */
     }
@@ -645,7 +648,7 @@ a {
     .page2 .cards {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 70px;
 
     }
 
@@ -663,10 +666,11 @@ a {
 
     .bytes p {
         text-align: center;
+        width: 90%;
     }
 
     .bytes img{
-        width: 30%;
+        width:30%;
     }
 
 
@@ -725,5 +729,17 @@ a {
     .page1 .two .img1 {
         /* top: 2em; */
         left: -4em;
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:710px){
+    .footer_page{
+        background-color: #642C99;
+        /* border: 2px solid red; */
+    }
+
+    .bytes img{
+        width: 20%;
     }
 }
